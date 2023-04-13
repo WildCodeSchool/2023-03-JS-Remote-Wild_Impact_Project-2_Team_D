@@ -1,4 +1,5 @@
 import Home from "./pages/Home";
+import "@picocss/pico";
 // US 1 import
 
 // US 2 Import
@@ -6,7 +7,6 @@ import Home from "./pages/Home";
 // US 3 import
 
 // US 4 import
-
 
 import "./App.css";
 
