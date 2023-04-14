@@ -1,0 +1,45 @@
+.main {
+  background-color: #fff2e5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font: "Jost", sans-serif;
+}
+.price {
+  color: #3a3a3a;
+  margin-left: 45%;
+}
+.card {
+  position: relative;
+  margin-top: 0;
+  height: 25rem;
+  width: 60%;
+  display: flex;
+  background-color: #b2a4ff;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.slogan {
+  position: absolute;
+  margin-left: -100%;
+  color: #3a3a3a;
+}
+.imageMain {
+  padding-top: 30%;
+}
+div > article > p {
+  padding: 0;
+}
+.panierMain {
+  margin-left: 20%;
+}
+.buttonMain {
+  background-color: #b2a4ff;
+  border: none;
+  border-radius: 40% 10% 30% 10%;
+  padding: 0;
+  font-size: large;
+}
