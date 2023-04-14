@@ -1,0 +1,46 @@
+.contactForm {
+  background-image: url("@assets/backgroundForm.jpg");
+  background-size: cover;
+  font-family: var(--main-font);
+  letter-spacing: 1px;
+  padding: 1rem 1.5rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .contactForm {
+    padding: 5rem 15rem;
+  }
+}
+
+.contactForm h3,
+.contactForm textarea,
+.contactForm input,
+.contactForm label {
+  color: #fff2e5;
+}
+
+.userNameEmail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.userInfo {
+  display: flex;
+  position: relative;
+}
+
+.userInfo > label {
+  position: absolute;
+  top: 16px;
+  left: 20px;
+}
+
+.submitButton {
+  border: solid 2px #fff2e5;
+  background-color: #fff2e5;
+  color: #3a3a3a;
+}
+
+.submitButton:hover {
+  opacity: 70%;
+}
