@@ -1,0 +1,13 @@
+.carrousel {
+  width: 100%;
+  height: 450px;
+  background-image: url("../assets/HomeBackground.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+}
+
+.carrousel h1 {
+  margin-bottom: -1rem;
+}
