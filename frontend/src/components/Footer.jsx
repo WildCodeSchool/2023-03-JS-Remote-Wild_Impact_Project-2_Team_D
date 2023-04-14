@@ -7,9 +7,9 @@ import "@components/Footer.css";
 function Footer() {
   return (
     <div className="Footer">
-      <img className="insta" src={insta} />
-      <img className="facebook" src={facebook} />
-      <img className="linkedin" src={linkedin} />
+      <img className="insta" src={insta} alt="insta" />
+      <img className="facebook" src={facebook} alt="facebook" />
+      <img className="linkedin" src={linkedin} alt="linkedin" />
     </div>
   );
 }

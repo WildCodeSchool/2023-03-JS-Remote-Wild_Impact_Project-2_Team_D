@@ -7,10 +7,10 @@ import "@components/Header.css";
 function Header() {
   return (
     <div className="header">
-      <img className="logo" src={logo} />
+      <img className="logo" src={logo} alt="logo" />
       <div className="bouton">
-        <img className="loupe" src={loupe} />
-        <img className="shop" src={shop} />
+        <img className="loupe" src={loupe} alt="loupe" />
+        <img className="shop" src={shop} alt="shop" />
       </div>
     </div>
   );

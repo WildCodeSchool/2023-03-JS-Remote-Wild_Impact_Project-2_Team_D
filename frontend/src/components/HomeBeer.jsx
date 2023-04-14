@@ -123,20 +123,20 @@ function HomeBeer() {
     <div className="containerBeer">
       <h2 className="titleHome">Nos bières Brunes</h2>
       <div className="bruneBeers">
-        {beers.map((beers) => (
-          <card key={beers.id}>
+        {beers.map((beer) => (
+          <card key={beer.id}>
             <div className="headerCard">
-              <button>+</button>
+              <button type="button">+</button>
             </div>
-            <img src={beers.image_url} />
+            <img src={beer.image_url} alt={beer.id} />
             <div className="footerCard">
-              <button>
+              <button type="button">
                 <p>+ d'infos</p>
               </button>
               <p>x12</p>
             </div>
             <div className="beerName">
-              <h3>{beers.name}</h3>
+              <h3>{beer.name}</h3>
               <h3>10e</h3>
             </div>
           </card>
@@ -144,14 +144,14 @@ function HomeBeer() {
       </div>
       <h2 className="titleHome">Nos bières Blondes</h2>
       <div className="bruneBeers">
-        {beers.map((beers) => (
-          <card key={beers.id}>
+        {beers.map((beer) => (
+          <card key={beer.id}>
             <div className="headerCard">
-              <button>+</button>
+              <button type="button">+</button>
             </div>
-            <img src={beers.image_url} />
+            <img src={beer.image_url} alt={beer.id} />
             <div className="footerCard">
-              <button>
+              <button type="button">
                 <p>+ d'infos</p>
               </button>
               <p>x12</p>
@@ -165,20 +165,20 @@ function HomeBeer() {
       </div>
       <h2 className="titleHome">Nos bières Blanches</h2>
       <div className="bruneBeers">
-        {beers.map((beers) => (
-          <card key={beers.id}>
+        {beers.map((beer) => (
+          <card key={beer.id}>
             <div className="headerCard">
-              <button>+</button>
+              <button type="button">+</button>
             </div>
-            <img src={beers.image_url} />
+            <img src={beer.image_url} alt={beer.id} />
             <div className="footerCard">
-              <button>
+              <button type="button">
                 <p>+ d'infos</p>
               </button>
               <p>x12</p>
             </div>
             <div className="beerName">
-              <h3>{beers.name}</h3>
+              <h3>{beer.name}</h3>
               <h3>10e</h3>
             </div>
           </card>

@@ -1,5 +1,4 @@
 import React from "react";
-import HomeBackground from "@assets/HomeBackground.jpg";
 import "@components/Carrousel.css";
 
 function Carrousel() {
