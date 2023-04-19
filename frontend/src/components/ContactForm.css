@@ -1,5 +1,5 @@
 .contactForm {
-  background-image: url("@assets/backgroundForm.jpg");
+  background-image: url("public/backgroundForm.jpg");
   background-size: cover;
   font-family: var(--main-font);
   letter-spacing: 1px;
