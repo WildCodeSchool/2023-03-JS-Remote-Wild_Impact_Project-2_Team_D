@@ -136,9 +136,7 @@ function CartPage() {
         <div className="priceTotalBeers">Total : {totalTtcAround} €</div>
       </div>
       <div className="command">
-        <button
-          type="button"
-          className="commandButton">
+        <button type="button" className="commandButton">
           PASSER LA COMMANDE
         </button>
       </div>
