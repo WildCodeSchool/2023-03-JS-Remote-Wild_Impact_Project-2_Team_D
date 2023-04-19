@@ -9,7 +9,7 @@ export default function Home() {
     <header className="App-header">
       <Header />
       <Carrousel />
-      <AllBeersByType title="Nos bières Brunes" />
+      <AllBeersByType title="Nos bières Brunes" cls="bruneBeers" />
       <About />
       <Footer />
     </header>

@@ -2,11 +2,11 @@ import React from "react";
 import "@components/AllBeersByType.css";
 import beers from "./Data";
 
-function AllBeersByType({ title }) {
+function AllBeersByType({ title, cls }) {
   return (
     <div className="containerBeer">
       <h2 className="titleHome">{title}</h2>
-      <div className="bruneBeers">
+      <div className={cls}>
         {beers.map((beer) => (
           <article key={beer.id}>
             <div className="headerCard">
