@@ -1,6 +1,6 @@
-import "./DescriptionPage2.css";
+import "./Descriptions.css";
 
-function DescriptionPage2() {
+function Descriptions() {
   return (
     <div>
       <div>
@@ -21,4 +21,4 @@ function DescriptionPage2() {
     </div>
   );
 }
-export default DescriptionPage2;
+export default Descriptions;

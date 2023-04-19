@@ -1,6 +1,6 @@
-import "./ChoixPage2.css";
+import "./OtherChoice.css";
 
-function ChoixPage2() {
+function OtherChoice() {
   return (
     <div className="styleChoix">
       <h5>Vous aimerez également</h5>
@@ -8,4 +8,4 @@ function ChoixPage2() {
     </div>
   );
 }
-export default ChoixPage2;
+export default OtherChoice;

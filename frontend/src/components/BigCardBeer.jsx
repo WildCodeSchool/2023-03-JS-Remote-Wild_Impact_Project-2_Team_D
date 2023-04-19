@@ -1,6 +1,6 @@
-import "./MainPage2.css";
+import "./BigCardBeer.css";
 
-function MainPage2() {
+function BigCardBeer() {
   return (
     <div className="main">
       <div className="price">
@@ -30,4 +30,4 @@ function MainPage2() {
     </div>
   );
 }
-export default MainPage2;
+export default BigCardBeer;
