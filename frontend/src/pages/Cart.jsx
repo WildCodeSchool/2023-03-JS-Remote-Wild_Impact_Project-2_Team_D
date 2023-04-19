@@ -123,17 +123,24 @@ const totalTtcAround = "€€€";
 
 function CartPage() {
   return (
-    <div>
-      <h1 className="h1BasketPage">Mon panier</h1>
+    <div className="CartPage">
+      <h1 className="h1CartPage">Mon panier</h1>
       {beers.map((beer) => (
         <BeerBasketCard key={beer.id} beer={beer} />
       ))}
 
-      <div className="commandOrContinue">
+      <div className="continueButtonAndTTC">
         <button type="button" className="continuePurchases">
           CONTINUER VOS ACHATS
         </button>
         <div className="priceTotalBeers">Total : {totalTtcAround} €</div>
+      </div>
+      <div className="command">
+        <button
+          type="button"
+          className="commandButton">
+          PASSER LA COMMANDE
+        </button>
       </div>
     </div>
   );

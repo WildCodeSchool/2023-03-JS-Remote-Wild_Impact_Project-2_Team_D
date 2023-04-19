@@ -12,15 +12,19 @@
   --secondary-font: "Jost", sans-serif;
 }
 
-.h1BasketPage {
+.CartPage {
+  background-color: var(--main-background-color);
+}
+
+.h1CartPage {
   font-family: var(--main-font);
   margin: 0 5% 20px 5%;
 }
 
 .basketItem {
   margin: 0px 5%;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
   border-bottom-width: 1px;
   border-bottom: 1px solid #b9b3b3;
 }
@@ -81,7 +85,7 @@
   flex-direction: column-reverse;
 }
 
-.commandOrContinue {
+.continueButtonAndTTC {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   justify-content: flex-start;
@@ -93,6 +97,8 @@
 .continuePurchases {
   background-color: #3a3a3a;
   width: auto;
+  border: 1px solid var(--main-color-black);
+  border-radius: 0;
   margin: 0 10px;
   font-size: 12px;
   border-color: #3a3a3a;
@@ -102,4 +108,23 @@
   padding: 12px 0px;
   font-size: 16px;
   font-weight: bold;
+}
+
+.command {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0px 5%;
+}
+
+.commandButton {
+  background: #FFF2E5;
+  border: 1px solid var(--main-color-black);
+  border-radius: 0;
+  width: auto;
+  text-decoration: none;
+  display: inline-block;
+  color: var(--main-color-black);
+  font-size: 16px;
+  font-family: var(--main-font);
+  margin: 10px 0;
 }
