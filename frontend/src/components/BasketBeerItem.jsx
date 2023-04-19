@@ -1,12 +1,13 @@
+import { useState } from "react";
+
 import "@pages/Cart.css";
+
 import bin from "@assets/bin.png";
 import plus from "@assets/plus.png";
 import moins from "@assets/moins.png";
-import { useState } from "react";
 
 function BeerBasketCard({ beer }) {
-  const priceByBottle = beer.price_per_liter * 0.33;
-  const priceByBottleAround = priceByBottle.toFixed(2);
+  const priceByBottleAround = beer.price_per_liter * (0.33).toFixed(2);
 
   const [addBeer, setAddBeer] = useState(1);
 
