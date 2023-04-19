@@ -7,9 +7,14 @@ import "@components/Footer.css";
 function Footer() {
   return (
     <div className="Footer">
-      <img className="insta" src={insta} alt="insta" />
-      <img className="facebook" src={facebook} alt="facebook" />
-      <img className="linkedin" src={linkedin} alt="linkedin" />
+      <div className="icone">
+        <img className="insta" src={insta} alt="insta" />
+        <img className="facebook" src={facebook} alt="facebook" />
+        <img className="linkedin" src={linkedin} alt="linkedin" />
+      </div>
+      <div className="mentions">
+        <p> Aromalt 2023</p>
+      </div>
     </div>
   );
 }

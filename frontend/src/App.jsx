@@ -18,7 +18,6 @@ function App() {
       {/** US 2 Page */}
       {/** US 3 Page */}
       {/** US 4 Page */}
-      <p>coucou</p>
     </div>
   );
 }

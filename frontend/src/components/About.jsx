@@ -1,4 +1,6 @@
 import React from "react";
+import about from "@assets/about.jpg";
+import team from "@assets/team.png";
 import "@components/About.css";
 
 function About() {
@@ -6,7 +8,7 @@ function About() {
     <div className="aboutContainer">
       <h2 className="titleabout">A propos</h2>
       <div className="history">
-        <img src="../src/assets/about.jpg" alt="about" />
+        <img className="about" src={about} alt="about" />
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
           condimentum dignissim ante quis ornare. Duis vestibulum tincidunt
@@ -23,10 +25,10 @@ function About() {
       </div>
       <div className="team">
         <h3>Notre équipe</h3>
-        <img src="../src/assets/team.png" alt="team" />
-        <img src="../src/assets/team.png" alt="team" />
-        <img src="../src/assets/team.png" alt="team" />
-        <img src="../src/assets/team.png" alt="team" />
+        <img className="team" src={team} alt="team" />
+        <img className="team" src={team} alt="team" />
+        <img className="team" src={team} alt="team" />
+        <img className="team" src={team} alt="team" />
       </div>
     </div>
   );
