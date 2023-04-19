@@ -5,7 +5,7 @@ import "@picocss/pico";
 // US 2 Import
 
 // US 3 import
-import BasketPage from "@pages/BasketPage";
+import CartPage from "@pages/Cart";
 // US 4 import
 
 import "./App.css";
@@ -17,7 +17,7 @@ function App() {
       {/** US 1 Page */}
       {/** US 2 Page */}
       {/** US 3 Page */}
-      <BasketPage />
+      <CartPage />
       {/** US 4 Page */}
       {/* <p>coucou</p> */}
     </div>

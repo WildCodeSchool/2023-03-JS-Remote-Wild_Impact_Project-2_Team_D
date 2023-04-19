@@ -1,4 +1,4 @@
-import "./BasketPage.css";
+import "./Cart.css";
 import BeerBasketCard from "@components/BasketBeerItem";
 
 const beers = [
@@ -119,12 +119,11 @@ const beers = [
   },
 ];
 
-const priceTtcAround = 10.66;
+const totalTtcAround = "€€€";
 
-function BasketPage() {
+function CartPage() {
   return (
-    <body>
-      <header />
+    <div>
       <h1 className="h1BasketPage">Mon panier</h1>
       {beers.map((beer) => (
         <BeerBasketCard key={beer.id} beer={beer} />
@@ -132,13 +131,12 @@ function BasketPage() {
 
       <div className="commandOrContinue">
         <button type="button" className="continuePurchases">
-          Continuer vos achats
+          CONTINUER VOS ACHATS
         </button>
-        <div className="priceTotalBeers">Total : {priceTtcAround} €</div>
+        <div className="priceTotalBeers">Total : {totalTtcAround} €</div>
       </div>
-      <footer />
-    </body>
+    </div>
   );
 }
 
-export default BasketPage;
+export default CartPage;
