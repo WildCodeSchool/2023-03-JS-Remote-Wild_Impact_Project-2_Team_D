@@ -4,11 +4,18 @@
   font-family: var(--main-font);
   letter-spacing: 1px;
   padding: 1rem 1.5rem;
+  border: none;
 }
 
 @media only screen and (min-width: 600px) {
   .contactForm {
-    padding: 5rem 15rem;
+    padding: 5rem 13rem;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .contactForm {
+    padding: 5rem 8rem;
   }
 }
 
@@ -16,7 +23,28 @@
 .contactForm textarea,
 .contactForm input,
 .contactForm label {
-  color: #fff2e5;
+  color: var(--main-color-white);
+}
+
+.contactForm textarea,
+.contactForm input {
+  border-bottom: 2px solid var(--main-color-white) !important;
+  border-radius: 0px;
+  border: none;
+}
+
+.inputFieldEmail input {
+  margin-left: 0.5rem;
+}
+
+.contactForm h3 {
+  /* display: flex; */
+  margin-bottom: 15px;
+  margin-top: 35px;
+  padding: 5px;
+  /* background-color: var(--main-color-black); */
+  /* opacity: 65%;
+  border-radius: 5px; */
 }
 
 .userNameEmail {
@@ -36,11 +64,17 @@
 }
 
 .submitButton {
-  border: solid 2px #fff2e5;
-  background-color: #fff2e5;
+  border: solid 2px var(--main-color-white);
+  background-color: var(--main-color-white);
   color: #3a3a3a;
+  width: 30%;
 }
 
 .submitButton:hover {
   opacity: 70%;
+}
+
+.divSubmitButton {
+  display: flex;
+  justify-content: flex-end;
 }
