@@ -1,21 +1,18 @@
-import "./Descriptions.css";
+import "@components/Descriptions.css";
 
-function Descriptions() {
+function Descriptions({ beer }) {
   return (
     <div>
       <div>
         <article className="descriptionCard">
-          <h5 className="descriptionTitle">Description du produit</h5>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <h5 className="descriptionTitle">Description de la "{beer.name}"</h5>
+          <p>{beer.brewers_tips}</p>
+          <p>Premier brassage : {beer.first_brewed} </p>
+          <p>{beer.description}</p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-            atque laborum sunt porro? Quasi, animi?
+            Degré :{beer.abv}° PH :{beer.ph}
           </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe,
-            harum! Dolorum delectus voluptatibus nam ipsum expedita dolorem id
-            in repudiandae.
-          </p>
+          <p>Prix/Litre :{beer.price_per_liter}€</p>
         </article>
       </div>
     </div>

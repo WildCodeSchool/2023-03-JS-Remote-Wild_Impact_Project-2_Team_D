@@ -17,29 +17,78 @@
   display: flex;
   background-color: #b2a4ff;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
   padding-bottom: 0;
   margin-bottom: 0;
 }
 .slogan {
   position: absolute;
-  margin-left: -100%;
+  margin-left: -33%;
   color: #3a3a3a;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
 .imageMain {
   padding-top: 30%;
 }
-div > article > p {
+.imageBeer {
+  height: 16rem;
+  width: 100%;
+}
+.nbrBeer {
   padding: 0;
+  margin-right: -80%;
 }
 .panierMain {
   margin-left: 20%;
 }
+
 .buttonMain {
-  background-color: #b2a4ff;
-  border: none;
-  border-radius: 40% 10% 30% 10%;
-  padding: 0;
-  font-size: large;
+  min-width: 10rem;
+  height: 2.5rem;
+  color: #fff2e5;
+  padding: 0.3rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: #fff2e5;
+  overflow: hidden;
+  border: 2px solid #b2a4ff;
+  color: #b2a4ff;
+}
+.buttonMain:hover {
+  color: #fff;
+}
+.buttonMain:hover:after {
+  height: 100%;
+}
+.buttonMain:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background: #b2a4ff;
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    height: 45rem;
+  }
+  .imageBeer {
+    height: 30rem;
+  }
+  .buttonMain {
+    min-width: 20rem;
+    height: 5rem;
+  }
 }

@@ -1,4 +1,4 @@
-import "./OtherChoice.css";
+import "@components/OtherChoice.css";
 
 function OtherChoice() {
   return (
