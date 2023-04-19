@@ -2,13 +2,13 @@ import React from "react";
 import "@components/AllBeersByType.css";
 import beers from "./Data";
 
-function AllBeersByType({ title, cls }) {
+function AllBeersByType({ title, cls, type }) {
   return (
     <div className="containerBeer">
       <h2 className="titleHome">{title}</h2>
       <div className={cls}>
         {beers
-          .filter((beer) => beer.type === "IPA")
+          .filter((beer) => beer.type === type)
           .map((beer) => (
             <article key={beer.id}>
               <div className="headerCard">
