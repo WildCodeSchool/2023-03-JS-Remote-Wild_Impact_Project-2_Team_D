@@ -20,8 +20,6 @@ h2 {
   font-family: var(--secondary-font);
 }
 
-.beer {
-}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -41,6 +39,7 @@ h2 {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

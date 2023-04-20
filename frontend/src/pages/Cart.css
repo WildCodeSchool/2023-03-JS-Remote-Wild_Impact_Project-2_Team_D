@@ -1,0 +1,130 @@
+:root {
+  --main-color-black: #3a3a3a;
+  --main-color-white: #fff2e5;
+  --main-background-color: #f2efeb;
+  --pastel-color-pink: #ffb4b4;
+  --pastel-color-blue: #bbf0f4;
+  --pastel-color-yellow: #fff6a6;
+  --pastel-color-green: #d4eadf;
+  --pastel-color-coral: #ffdeb4;
+  --pastel-color-purple: #b2a4ff;
+  --main-font: "Josefin Sans", sans-serif;
+  --secondary-font: "Jost", sans-serif;
+}
+
+.CartPage {
+  background-color: var(--main-background-color);
+}
+
+.h1CartPage {
+  font-family: var(--main-font);
+  margin: 0 5% 20px 5%;
+}
+
+.basketItem {
+  margin: 0px 5%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom-width: 1px;
+  border-bottom: 1px solid #b9b3b3;
+}
+
+.beerListItem {
+  display: grid;
+  grid-template-columns: 1.5fr 3fr 2fr;
+  height: 175px;
+}
+
+.imgBeerBasket {
+  height: 175px;
+  width: 80px;
+}
+
+.beerDetailList {
+  padding-left: 20px;
+}
+
+.beerDetailList p {
+  margin-bottom: 4px;
+  font-family: var(--secondary-font);
+}
+
+.beerBasketName {
+  font-size: 16px;
+}
+
+.beerBasketDetail {
+  font-size: 12px;
+}
+
+.beerDetailIcon {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.basketIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.basketIcon {
+  background: none;
+  background-color: none;
+  border: none;
+  color: white;
+  padding: 20px 8px 0px 8px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.ttcByBeer {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.continueButtonAndTTC {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  justify-content: flex-start;
+  justify-items: left;
+  margin: 16px 5%;
+  justify-content: space-around;
+}
+
+.continuePurchases {
+  background-color: #3a3a3a;
+  width: auto;
+  border: 1px solid var(--main-color-black);
+  border-radius: 0;
+  margin: 0 10px;
+  font-size: 12px;
+  border-color: #3a3a3a;
+}
+
+.priceTotalBeers {
+  padding: 12px 0px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.command {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0px 5%;
+}
+
+.commandButton {
+  background: #fff2e5;
+  border: 1px solid var(--main-color-black);
+  border-radius: 0;
+  width: auto;
+  text-decoration: none;
+  display: inline-block;
+  color: var(--main-color-black);
+  font-size: 16px;
+  font-family: var(--main-font);
+  margin: 10px 0;
+}
