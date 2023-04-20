@@ -1,32 +1,4 @@
-.aboutContainer {
-  background: url("../assets/aboutBackground.jpg");
-  background-size: cover;
-}
-.history img {
-  height: 9rem;
-}
-.history p {
-  font-size: 0.5rem;
-  color: white;
-  margin-left: 1rem;
-  padding-top: 1rem;
-}
-.history {
-  display: flex;
-  align-items: center;
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.team {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.team img {
-  height: 5rem;
-}
+/* TITLE */
 
 .titleabout {
   font-size: 1.3rem;
@@ -36,6 +8,44 @@
   width: 40%;
   padding-left: 3.5rem;
   font-family: "Josefin Sans", sans-serif;
+}
+
+/* ABOUT */
+
+.aboutContainer {
+  background: url("../assets/aboutBackground.jpg");
+  background-size: cover;
+  margin-top: 4rem;
+}
+
+.history img {
+  height: 9rem;
+}
+
+.history p {
+  font-size: 0.5rem;
+  color: white;
+  margin-left: 1rem;
+  padding-top: 1rem;
+}
+
+.history {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* TEAM */
+
+.team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team img {
+  height: 5rem;
 }
 
 .team h3 {

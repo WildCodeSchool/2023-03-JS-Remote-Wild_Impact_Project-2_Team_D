@@ -1,4 +1,5 @@
 import React from "react";
+import shop from "@assets/shop.png";
 import "@components/AllBeersByType.css";
 import beers from "./Data";
 
@@ -13,7 +14,9 @@ function AllBeersByType({ title, cls, type }) {
           .map((beer) => (
             <article key={beer.id}>
               <div className="headerCard">
-                <button type="button">+</button>
+                <button type="button">
+                  <img className="shop" src={shop} alt="shop" />
+                </button>
               </div>
               <img src={beer.image_url} alt={beer.id} />
               <div className="footerCard">

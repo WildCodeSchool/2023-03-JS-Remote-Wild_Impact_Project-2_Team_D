@@ -1,24 +1,4 @@
-.titleHome {
-  font-weight: 400;
-  font-size: 1.5rem;
-  text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-  color: #3a3a3a;
-  font-family: "Josefin Sans", sans-serif;
-  --typography-spacing-vertical: 0rem;
-}
-
-.beerName {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 0.5rem;
-}
-
-.beerName h3 {
-  color: #3a3a3a;
-  font-size: 0.7rem;
-}
+/* HEADER */
 
 .headerCard {
   display: flex;
@@ -34,13 +14,65 @@
   font-weight: bolder;
 }
 
-card {
+/* TITLE */
+
+.titleHome {
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 2rem;
+  color: #3a3a3a;
+  font-family: "Josefin Sans", sans-serif;
+  --typography-spacing-vertical: 0rem;
+}
+
+/* ARTICLE */
+
+article {
   width: 30%;
-  background-color: #b2a4ff;
+  background-color: #b2a4ff !important;
   text-align: center;
   height: 10rem;
-  padding-bottom: 2rem;
+  padding: 0rem 0rem 2rem 0rem !important;
 }
+
+.containerBeer {
+  width: 100%;
+  background-color: #f2efeb;
+}
+
+.bruneBeers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.bruneBeers p {
+  font-size: 0.6rem;
+  padding-bottom: ;
+  color: white;
+  --typography-spacing-vertical: 1rem;
+}
+
+.bruneBeers img {
+  height: 6rem;
+  padding-top: 0rem;
+}
+
+.beerName {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+}
+
+.beerName h3 {
+  color: #3a3a3a;
+  font-size: 0.7rem;
+}
+
+/* FOOTER */
 
 .footerCard {
   display: flex;
@@ -51,6 +83,7 @@ card {
   padding-top: 2rem;
   padding-right: 0.2rem;
 }
+
 .footerCard button {
   background-color: white;
   height: 0.7rem;
@@ -58,38 +91,10 @@ card {
   width: 3rem;
   padding: 0;
 }
+
 .footerCard button p {
   font-size: 0.5rem;
   text-align: center;
   font-weight: bolder;
-
   color: #b2a4ff;
-}
-
-.containerBeer {
-  width: 100%;
-  background-color: #f2efeb;
-  padding-bottom: 3rem;
-}
-.blondeBeers,
-.bruneBeers {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.blondeBeers p,
-.bruneBeers p {
-  font-size: 0.6rem;
-  padding-bottom: ;
-  color: white;
-
-  --typography-spacing-vertical: 1rem;
-}
-.blondeBeers img,
-.bruneBeers img {
-  height: 6rem;
-  padding-top: 0rem;
 }

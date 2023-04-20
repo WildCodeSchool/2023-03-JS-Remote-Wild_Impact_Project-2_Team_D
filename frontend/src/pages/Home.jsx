@@ -10,6 +10,12 @@ export default function Home() {
       <Header />
       <Carrousel />
       <AllBeersByType title="Nos bières Brunes" cls="bruneBeers" type="Braun" />
+      <AllBeersByType
+        title="Nos bières Blondes"
+        cls="bruneBeers"
+        type="Blonde"
+      />
+      <AllBeersByType title="Nos bières IPA" cls="bruneBeers" type="IPA" />
       <About />
       <Footer />
     </header>

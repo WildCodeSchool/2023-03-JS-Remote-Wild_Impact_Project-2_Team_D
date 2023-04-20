@@ -1,14 +1,4 @@
-.carrousel {
-  width: 100%;
-  height: 600px;
-  background-image: url("../../public/HomeBackground.jpg");
-  background-size: cover;
-  display: flex;
-  justify-content: left;
-  align-items: flex-end;
-  background-attachment: fixed;
-  background-position: center center;
-}
+/* TITLE */
 
 .TitleCarrousel h1 {
   margin-bottom: -1.3rem;
@@ -33,11 +23,27 @@
   }
 }
 
+/* BACKGROUND */
+
+.carrousel {
+  width: 100%;
+  height: 600px;
+  background-image: url("../../public/HomeBackground.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+/* MEDIAQUERIE */
+
 @media screen and (min-width: 868px) {
   .carrousel {
     width: 100%;
     height: 1000px;
-    background-image: url("../assets/HomeBackground.jpg");
+    background-image: url("../../public/HomeBackground.jpg");
     background-size: cover;
     display: flex;
     justify-content: left;
