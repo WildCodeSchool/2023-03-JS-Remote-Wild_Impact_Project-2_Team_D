@@ -21,8 +21,7 @@
 
 .contactForm h3,
 .contactForm textarea,
-.contactForm input,
-.contactForm label {
+.contactForm input {
   color: var(--main-color-white);
 }
 
@@ -38,13 +37,9 @@
 }
 
 .contactForm h3 {
-  /* display: flex; */
   margin-bottom: 15px;
   margin-top: 35px;
   padding: 5px;
-  /* background-color: var(--main-color-black); */
-  /* opacity: 65%;
-  border-radius: 5px; */
 }
 
 .userNameEmail {
@@ -57,10 +52,9 @@
   position: relative;
 }
 
-.userInfo > label {
-  position: absolute;
-  top: 16px;
-  left: 20px;
+input::placeholder,
+textarea::placeholder {
+  color: var(--main-color-white);
 }
 
 .submitButton {
