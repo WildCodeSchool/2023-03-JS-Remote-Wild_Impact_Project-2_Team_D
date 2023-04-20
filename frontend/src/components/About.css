@@ -1,29 +1,31 @@
 /* TITLE */
 
 .titleabout {
-  font-size: 1.3rem;
+  font-size: 3vw;
   --typography-spacing-vertical: 0rem;
   color: white;
   background-color: #3a3a3a;
-  width: 40%;
-  padding-left: 3.5rem;
+  width: 15vw;
+  padding-left: 1vw;
   font-family: "Josefin Sans", sans-serif;
+  margin-top: 2rem;
 }
 
 /* ABOUT */
 
-.aboutContainer {
+.about {
   background: url("../../public/aboutBackground.jpg");
   background-size: cover;
-  margin-top: 4rem;
+  height: 70vw;
 }
 
 .history img {
-  height: 9rem;
+  margin-top: 3rem;
+  height: 30vw;
 }
 
 .history p {
-  font-size: 0.5rem;
+  font-size: 1.5vw;
   color: white;
   margin-left: 1rem;
   padding-top: 1rem;
@@ -49,7 +51,7 @@
 }
 
 .team h3 {
-  font-size: 0.7rem;
+  font-size: 2.5vw;
   margin-bottom: 0.5rem;
   color: white;
 }

@@ -3,22 +3,28 @@
 .headerCard {
   display: flex;
   justify-content: flex-end;
-  height: 2rem;
+  height: 2.2rem;
 }
 
 .headerCard button {
   background-color: transparent;
   border: none;
-  width: 5%;
-  padding-top: 0;
+  width: 2rem;
+  padding: 0;
   font-weight: bolder;
+}
+
+.shop2 {
+  height: 1.5rem !important;
+  margin-right: -10px;
+  color: white;
 }
 
 /* TITLE */
 
 .titleHome {
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 4vw;
   text-align: center;
   padding-top: 2rem;
   color: #3a3a3a;
@@ -29,10 +35,10 @@
 /* ARTICLE */
 
 article {
-  width: 30%;
+  width: 31%;
+  height: 10rem;
   background-color: #b2a4ff !important;
   text-align: center;
-  height: 10rem;
   padding: 0rem 0rem 2rem 0rem !important;
 }
 
@@ -50,14 +56,13 @@ article {
 }
 
 .bruneBeers p {
-  font-size: 0.6rem;
-  padding-bottom: ;
+  font-size: 1rem;
   color: white;
   --typography-spacing-vertical: 1rem;
 }
 
 .bruneBeers img {
-  height: 6rem;
+  height: 5.7rem;
   padding-top: 0rem;
 }
 
@@ -69,7 +74,7 @@ article {
 
 .beerName h3 {
   color: #3a3a3a;
-  font-size: 0.7rem;
+  font-size: 2.5vw;
 }
 
 /* FOOTER */
@@ -78,7 +83,7 @@ article {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 1rem;
+  height: 1vw;
   padding-left: 0.2rem;
   padding-top: 2rem;
   padding-right: 0.2rem;
@@ -97,4 +102,7 @@ article {
   text-align: center;
   font-weight: bolder;
   color: #b2a4ff;
+}
+
+@media screen and (min-width: 875px) {
 }

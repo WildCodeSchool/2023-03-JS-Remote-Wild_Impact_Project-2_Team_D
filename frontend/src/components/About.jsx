@@ -5,7 +5,7 @@ import "@components/About.css";
 
 function About() {
   return (
-    <div className="aboutContainer">
+    <div className="about">
       <h2 className="titleabout">A propos</h2>
       <div className="history">
         <img className="about" src={about} alt="about" />
