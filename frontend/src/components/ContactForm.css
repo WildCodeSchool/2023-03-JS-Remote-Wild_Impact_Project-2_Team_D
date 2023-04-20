@@ -7,17 +7,24 @@
   border: none;
 }
 
-@media only screen and (min-width: 600px) {
+.formContainer {
+  margin-top: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+@media only screen and (min-width: 1024px) {
   .contactForm {
     padding: 5rem 13rem;
   }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 800px) {
+/* @media only screen and (min-width: 600px) and (max-width: 900px) {
   .contactForm {
     padding: 5rem 8rem;
   }
-}
+} */
 
 .contactForm h3,
 .contactForm textarea,
@@ -61,7 +68,7 @@ textarea::placeholder {
   border: solid 2px var(--main-color-white);
   background-color: var(--main-color-white);
   color: #3a3a3a;
-  width: 30%;
+  width: 6rem;
 }
 
 .submitButton:hover {
