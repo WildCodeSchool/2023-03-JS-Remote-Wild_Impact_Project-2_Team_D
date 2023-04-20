@@ -1,4 +1,5 @@
 // import Home from "./pages/Home";
+
 import "@picocss/pico";
 // US 1 import
 
@@ -7,6 +8,9 @@ import "@picocss/pico";
 // US 3 import
 import CartPage from "@pages/Cart";
 // US 4 import
+
+// ContactForm import
+import ContactForm from "@components/ContactForm";
 
 import "./App.css";
 
@@ -19,6 +23,7 @@ function App() {
       {/** US 3 Page */}
       <CartPage />
       {/** US 4 Page */}
+      <ContactForm />
       {/* <p>coucou</p> */}
     </div>
   );
