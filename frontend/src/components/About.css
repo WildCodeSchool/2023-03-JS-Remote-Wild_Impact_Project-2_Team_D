@@ -13,7 +13,7 @@
 /* ABOUT */
 
 .aboutContainer {
-  background: url("../assets/aboutBackground.jpg");
+  background: url("../../public/aboutBackground.jpg");
   background-size: cover;
   margin-top: 4rem;
 }
