@@ -20,12 +20,6 @@
   }
 }
 
-/* @media only screen and (min-width: 600px) and (max-width: 900px) {
-  .contactForm {
-    padding: 5rem 8rem;
-  }
-} */
-
 .contactForm h3,
 .contactForm textarea,
 .contactForm input {
