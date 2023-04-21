@@ -26,7 +26,7 @@ function App() {
       <CartPage />
       {/** US 4 Page */}
       <ContactForm />
-      {/* <p>coucou</p>} */
+      {/* <p>coucou</p> */}
     </div>
   );
 }
