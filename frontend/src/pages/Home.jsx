@@ -2,7 +2,6 @@ import Carrousel from "@components/Carrousel";
 import Header from "@components/Header";
 import AllBeersByType from "@components/AllBeersByType";
 import About from "@components/About";
-import Footer from "@components/Footer";
 
 export default function Home() {
   return (
@@ -17,7 +16,6 @@ export default function Home() {
       />
       <AllBeersByType title="Nos bières IPA" cls="bruneBeers" type="IPA" />
       <About />
-      <Footer />
     </header>
   );
 }

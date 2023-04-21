@@ -6,13 +6,15 @@ function Descriptions({ beer }) {
       <div>
         <article className="descriptionCard">
           <h5 className="descriptionTitle">Description de la "{beer.name}"</h5>
-          <p>{beer.brewers_tips}</p>
-          <p>Premier brassage : {beer.first_brewed} </p>
-          <p>{beer.description}</p>
-          <p>
+          <p className="descriptionItem">{beer.brewers_tips}</p>
+          <p className="descriptionItem">
+            Premier brassage : {beer.first_brewed}{" "}
+          </p>
+          <p className="descriptionItem">{beer.description}</p>
+          <p className="descriptionItem">
             Degré :{beer.abv}° PH :{beer.ph}
           </p>
-          <p>Prix/Litre :{beer.price_per_liter}€</p>
+          <p className="descriptionItem">Prix/Litre :{beer.price_per_liter}€</p>
         </article>
       </div>
     </div>
