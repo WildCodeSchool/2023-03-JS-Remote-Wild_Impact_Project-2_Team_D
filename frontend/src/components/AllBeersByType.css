@@ -1,5 +1,7 @@
 /* HEADER */
-
+.App-header {
+  background-color: #f2efeb;
+}
 .headerCard {
   display: flex;
   justify-content: flex-end;
@@ -39,20 +41,21 @@ article {
   height: 10rem;
   background-color: #b2a4ff !important;
   text-align: center;
-  padding: 0rem 0rem 2rem 0rem !important;
+  padding: 0rem 0rem 4rem 0rem !important;
 }
 
 .containerBeer {
   width: 100%;
-  background-color: #f2efeb;
+  background-color: #f2efeb !important;
+  margin-bottom: 2rem;
 }
 
 .bruneBeers {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .bruneBeers p {
@@ -102,7 +105,4 @@ article {
   text-align: center;
   font-weight: bolder;
   color: #b2a4ff;
-}
-
-@media screen and (min-width: 875px) {
 }

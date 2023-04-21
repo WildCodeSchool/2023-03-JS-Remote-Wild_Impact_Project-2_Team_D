@@ -1,7 +1,7 @@
 import React from "react";
 import shop2 from "@assets/shop2.png";
 import "@components/AllBeersByType.css";
-import beers from "./Data";
+import beers from "../assets/beersDataBase";
 
 function AllBeersByType({ title, cls, type }) {
   return (
