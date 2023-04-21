@@ -1955,7 +1955,6 @@ const beers = [
       "Ageing in barrels brings the ABV up. Recreate rum cask ageing by soaking oak chips in rum then adding to the maturing beer.",
     contributed_by: "Sam Mason <samjbmason>",
   },
-=======
     "type": "Braun",
     "id": 1,
     "name": "Buzz",
@@ -3766,7 +3765,7 @@ const beers = [
       "twist": "Oak chips: 25g at end"
     },
     "brewers_tips": "Boil for even longer to get more caramelised flavours in the beer.",
-    "contributed_by": "Sam Mason <samjbmason>"
+    "contributed_by": "Sam Mason <samjbmason>",
   },
   {
     "type": "Black",
@@ -3803,9 +3802,8 @@ const beers = [
       "twist": "Aged in rum casks for 12 months"
     },
     "brewers_tips": "Ageing in barrels brings the ABV up. Recreate rum cask ageing by soaking oak chips in rum then adding to the maturing beer.",
-    "contributed_by": "Sam Mason <samjbmason>"
+    "contributed_by": "Sam Mason <samjbmason>",
   }
-
 ];
 
 export default beers;
