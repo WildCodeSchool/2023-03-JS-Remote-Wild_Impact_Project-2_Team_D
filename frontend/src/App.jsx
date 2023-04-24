@@ -1,7 +1,9 @@
 // import Home from "./pages/Home";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import "@picocss/pico";
 // US 1 import
-
+import NavBar from "@components/NavBar";
 // US 2 Import
 import Page2 from "@pages/Page2";
 
@@ -11,21 +13,24 @@ import CartPage from "@pages/Cart";
 // US 4 import
 // ContactForm import
 import ContactForm from "@components/ContactForm";
+
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      {/* <Home /> */}
-      {/** US 1 Page */}
-      {/** US 2 Page */}
-      <Page2 />
-      {/** US 3 Page */}
-      <CartPage />
-      {/** US 4 Page */}
+    <Router>
+      <div>
+        {/* <Header /> */}
+        <NavBar />
+      </div>
+      <Routes>
+        {/* <Route path="/" element={<Home />}></Route> */}
+        <Route path="/Description" element={<Page2 />} />
+        <Route path="/Cart" element={<CartPage />} />
+      </Routes>
       <ContactForm />
-      {/* <p>coucou</p> */}
-    </div>
+      {/* <Footer /> */}
+    </Router>
   );
 }
 
