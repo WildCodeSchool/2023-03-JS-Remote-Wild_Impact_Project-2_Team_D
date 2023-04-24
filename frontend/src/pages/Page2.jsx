@@ -6,7 +6,7 @@ import BigCardBeer from "@components/BigCardBeer";
 import OtherChoice from "@components/OtherChoice";
 import Descriptions from "@components/Descriptions";
 import Random from "@components/Random";
-import beers from "@assets/beersDataBase.jsx";
+import beers from "@assets/beersDataBase.js";
 
 import "@pages/page2.css";
 

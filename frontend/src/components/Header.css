@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff2e5;
+  height: 2rem;
+}
+
+.logo {
+  height: 1.5rem;
+}
+
+.shop {
+  height: 1.5rem;
+  margin-right: 0;
+}
+
+.loupe {
+  height: 1.5rem;
+  margin-right: 0;
+}

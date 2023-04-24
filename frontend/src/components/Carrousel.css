@@ -1,0 +1,45 @@
+/* TITLE */
+
+.TitleCarrousel h1 {
+  margin-bottom: -3.5vw;
+  color: #f2efeb;
+  font-size: 7vw;
+}
+
+.TitleCarrousel {
+  animation: puff-in-center 1s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+}
+
+@keyframes puff-in-center {
+  0% {
+    transform: scale(2);
+    filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+/* BACKGROUND */
+
+.carrousel {
+  width: 100%;
+  height: 80vw;
+  background-image: url("../../public/HomeBackground.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+}
+
+/* MEDIAQUERIE */
+@media screen and (min-width: 875px) {
+  .carrousel {
+    max-height: 70vw;
+    background-position: center;
+    background-attachment: fixed;
+  }
+}
