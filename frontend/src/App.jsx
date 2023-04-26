@@ -1,8 +1,8 @@
 import "@picocss/pico";
 import Home from "@pages/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import NavBar from "@components/NavBar";
 import Page2 from "@pages/Page2";
+import Header from "@components/Header";
 import CartPage from "@pages/Cart";
 import ContactForm from "@components/ContactForm";
 import Footer from "@components/Footer";
