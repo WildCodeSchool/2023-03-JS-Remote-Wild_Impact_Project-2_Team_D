@@ -2,6 +2,7 @@
 .App-header {
   background-color: #f2efeb;
 }
+
 .headerCard {
   display: flex;
   justify-content: flex-end;
@@ -36,7 +37,7 @@
 
 /* ARTICLE */
 
-article {
+.oneBeer {
   width: 31%;
   height: 10rem;
   background-color: #b2a4ff !important;
@@ -46,8 +47,7 @@ article {
 
 .containerBeer {
   width: 100%;
-  background-color: #f2efeb !important;
-  margin-bottom: 2rem;
+  background-color: #fff2e5 !important;
 }
 
 .bruneBeers {

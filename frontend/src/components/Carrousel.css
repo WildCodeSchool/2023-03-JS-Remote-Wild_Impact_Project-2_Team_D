@@ -7,7 +7,7 @@
 }
 
 .TitleCarrousel {
-  animation: puff-in-center 1s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  animation: puff-in-center 2s cubic-bezier(0.47, 0, 0.745, 0.715) both;
 }
 
 @keyframes puff-in-center {

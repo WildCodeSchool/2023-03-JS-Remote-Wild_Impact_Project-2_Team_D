@@ -62,7 +62,9 @@ function BeerBasketCard({ beer }) {
           </div>
         </div>
         <div className="ttcByBeer">
-          <p>Total : {(addBeer * priceByBottleAround).toFixed(2)} €</p>
+          <p className="ttcByBeerDetail">
+            Total : {(addBeer * priceByBottleAround).toFixed(2)} €
+          </p>
         </div>
       </div>
     </div>

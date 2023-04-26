@@ -1,35 +1,26 @@
-// import Home from "./pages/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 import "@picocss/pico";
-// US 1 import
-import NavBar from "@components/NavBar";
-// US 2 Import
+import Home from "@pages/Home";
 import Page2 from "@pages/Page2";
-
-// US 3 import
+import Header from "@components/Header";
 import CartPage from "@pages/Cart";
-
-// US 4 import
-// ContactForm import
 import ContactForm from "@components/ContactForm";
-
+import Footer from "@components/Footer";
 import "./App.css";
 
 function App() {
   return (
     <Router>
       <div>
-        {/* <Header /> */}
-        <NavBar />
+        <Header />
       </div>
       <Routes>
-        {/* <Route path="/" element={<Home />}></Route> */}
+        <Route path="/" element={<Home />} />
         <Route path="/Description" element={<Page2 />} />
         <Route path="/Cart" element={<CartPage />} />
       </Routes>
       <ContactForm />
-      {/* <Footer /> */}
+      <Footer />
     </Router>
   );
 }
