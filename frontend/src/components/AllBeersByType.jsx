@@ -12,7 +12,7 @@ function AllBeersByType({ title, cls, type }) {
           .filter((beer) => beer.type === type)
           .slice(0, 3)
           .map((beer) => (
-            <article className="OneBeer" key={beer.id}>
+            <article className="oneBeer" key={beer.id}>
               <div className="headerCard">
                 <button type="button">
                   <img className="shop2" src={shop2} alt="shop" />
