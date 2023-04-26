@@ -1,6 +1,6 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "@picocss/pico";
 import Home from "@pages/Home";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Page2 from "@pages/Page2";
 import Header from "@components/Header";
 import CartPage from "@pages/Cart";
