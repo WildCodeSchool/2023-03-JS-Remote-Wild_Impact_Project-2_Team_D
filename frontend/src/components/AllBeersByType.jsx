@@ -1,11 +1,12 @@
-import React from "react";
+import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 import { CarouselProvider, Slider, Slide } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import shop2 from "@assets/shop2.png";
 import "@components/AllBeersByType.css";
 import beers from "../assets/beersDataBase";
 
-function AllBeersByType({ title, cls }) {
+function AllBeersByType({ title, cls, type }) {
 
  const [beers, setBeers] = useState([]);
 
