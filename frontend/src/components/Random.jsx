@@ -3,6 +3,10 @@ import "@components/Random.css";
 function Random({ setRandoms }) {
   const handleClick = () => {
     setRandoms(Math.floor(Math.random() * 50 + 1));
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
   return (
