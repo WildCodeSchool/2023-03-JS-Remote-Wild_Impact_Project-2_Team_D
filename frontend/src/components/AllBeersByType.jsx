@@ -1,17 +1,21 @@
 import React from "react";
+import { CarouselProvider, Slider, Slide } from "pure-react-carousel";
+import "pure-react-carousel/dist/react-carousel.es.css";
 import shop2 from "@assets/shop2.png";
 import "@components/AllBeersByType.css";
 import beers from "../assets/beersDataBase";
-import {
-  CarouselProvider,
-  Slider,
-  Slide,
-  ButtonBack,
-  ButtonNext,
-} from "pure-react-carousel";
-import "pure-react-carousel/dist/react-carousel.es.css";
 
-function AllBeersByType({ title, cls, type }) {
+function AllBeersByType({ title, cls }) {
+
+ const [beers, setBeers] = useState([]);
+
+  useEffect(() => {
+    fetch(`http://localhost:5500/beers?type=${type}`)
+      .then((res) => res.json())
+      .then((json) => setBeers(json))
+      .catch((err) => console.error(err));
+  }, []);
+
   const colors = [
     "#ffb4b4",
     "#bbf0f4",

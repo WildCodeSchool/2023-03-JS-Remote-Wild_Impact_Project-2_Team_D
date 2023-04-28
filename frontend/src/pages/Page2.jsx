@@ -1,23 +1,36 @@
 import "@picocss/pico";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import BigCardBeer from "@components/BigCardBeer";
 import OtherChoice from "@components/OtherChoice";
 import Descriptions from "@components/Descriptions";
 import Random from "@components/Random";
-import beers from "@assets/beersDataBase.js";
 
 import "@pages/page2.css";
 
 function Page2() {
-  const [randoms, setRandoms] = useState(0);
+  const [randoms, setRandoms] = useState(1);
+  const [beer, setBeer] = useState();
+
+  useEffect(() => {
+    fetch(`http://localhost:5500/beers/${randoms}`)
+      .then((res) => res.json())
+      .then((json) => setBeer(json))
+      .catch((err) => console.error(err));
+  }, [randoms]);
+
   return (
     <div data-theme="light">
-      <BigCardBeer beer={beers[randoms]} />
-      <Descriptions beer={beers[randoms]} />
-      <OtherChoice />
-      <Random randoms={randoms} setRandoms={setRandoms} beers={beers} />
+      {beer && (
+        <>
+          <BigCardBeer beer={beer} />
+          <Descriptions beer={beer} />
+          <OtherChoice />
+          <Random randoms={randoms} setRandoms={setRandoms} />
+        </>
+      )}
+      ;
     </div>
   );
 }
