@@ -18,7 +18,6 @@ function AllBeersByType({ title, cls, type }) {
       <h2 className="titleHome">{title}</h2>
       <div className={cls}>
         {beers
-          .filter((beer) => beer.type === type)
           .slice(0, 3)
           .map((beer) => (
             <article className="oneBeer" key={beer.id}>
