@@ -6,7 +6,7 @@ import shop2 from "@assets/shop2.png";
 import "@components/AllBeersByType.css";
 
 function AllBeersByType({ title, cls, type }) {
-const [beers, setBeers] = useState([]);
+  const [beers, setBeers] = useState([]);
 
   useEffect(() => {
     fetch(`http://localhost:5500/beers?type=${type}`)
