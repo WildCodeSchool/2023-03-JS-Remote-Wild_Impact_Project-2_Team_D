@@ -1,8 +1,8 @@
 import "@components/Random.css";
 
-function Random({ beers, setRandoms }) {
+function Random({ setRandoms }) {
   const handleClick = () => {
-    setRandoms(Math.floor(Math.random() * (beers.length - 1) + 1));
+    setRandoms(Math.floor(Math.random() * 50 + 1));
   };
 
   return (
