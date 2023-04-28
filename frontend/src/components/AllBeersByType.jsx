@@ -4,7 +4,6 @@ import { CarouselProvider, Slider, Slide } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import shop2 from "@assets/shop2.png";
 import "@components/AllBeersByType.css";
-import beers from "../assets/beersDataBase";
 
 function AllBeersByType({ title, cls, type }) {
 
@@ -57,7 +56,7 @@ function AllBeersByType({ title, cls, type }) {
                   <div className="footerCard">
                     <Link to={`/Description/${beer.id}`}>
                   <p>+ d'infos</p>
-                </Link>
+                    </Link>
                     <p>x12</p>
                   </div>
                   <div className="beerName">
@@ -85,7 +84,7 @@ function AllBeersByType({ title, cls, type }) {
                   <div className="footerCard">
                      <Link to={`/Description/${beer.id}`}>
                   <p>+ d'infos</p>
-                </Link>
+                     </Link>
                     <p>x12</p>
                   </div>
                   <div className="beerName">
@@ -113,7 +112,7 @@ function AllBeersByType({ title, cls, type }) {
                   <div className="footerCard">
                      <Link to={`/Description/${beer.id}`}>
                   <p>+ d'infos</p>
-                </Link>
+                     </Link>
                     <p>x12</p>
                   </div>
                   <div className="beerName">
