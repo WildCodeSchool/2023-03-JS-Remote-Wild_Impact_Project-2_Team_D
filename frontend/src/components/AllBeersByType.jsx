@@ -82,9 +82,9 @@ function AllBeersByType({ title, cls, type }) {
                   </div>
                   <img src={beer.image_url} alt={beer.id} />
                   <div className="footerCard">
-                     <Link to={`/Description/${beer.id}`}>
+                    <Link to={`/Description/${beer.id}`}>
                       <p>+ d'infos</p>
-                     </Link>
+                    </Link>
                     <p>x12</p>
                   </div>
                   <div className="beerName">
@@ -110,9 +110,9 @@ function AllBeersByType({ title, cls, type }) {
                   </div>
                   <img src={beer.image_url} alt={beer.id} />
                   <div className="footerCard">
-                     <Link to={`/Description/${beer.id}`}>
+                    <Link to={`/Description/${beer.id}`}>
                       <p>+ d'infos</p>
-                     </Link>
+                    </Link>
                     <p>x12</p>
                   </div>
                   <div className="beerName">
