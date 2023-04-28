@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import shop2 from "@assets/shop2.png";
 import "@components/AllBeersByType.css";
 import beers from "../assets/beersDataBase";
@@ -20,9 +21,11 @@ function AllBeersByType({ title, cls, type }) {
               </div>
               <img src={beer.image_url} alt={beer.id} />
               <div className="footerCard">
-                <button type="button">
-                  <p>+ d'infos</p>
-                </button>
+                <Link to={`/Description/${beer.id}`}>
+                  <button type="button">
+                    <p>+ d'infos</p>
+                  </button>
+                </Link>
                 <p>x12</p>
               </div>
               <div className="beerName">
