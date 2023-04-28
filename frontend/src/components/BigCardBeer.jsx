@@ -1,15 +1,7 @@
-// import React, { useState, useEffect } from "react";
+import React from "react";
 import "@components/BigCardBeer.css";
 
 function BigCardBeer({ beer }) {
-  //   const [beers, setBeers] = useState([]);
-
-  //   useEffect(() => {
-  //     fetch(`http://localhost:5500/beers/:id`)
-  //       .then((res) => res.json())
-  //       .then((json) => setBeers(json))
-  //       .catch((err) => console.error(err));
-  //   }, []);
 
   return (
     <div className="main">
