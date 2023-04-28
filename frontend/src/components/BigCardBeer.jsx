@@ -2,7 +2,6 @@ import React from "react";
 import "@components/BigCardBeer.css";
 
 function BigCardBeer({ beer }) {
-
   return (
     <div className="main">
       <div className="price">
