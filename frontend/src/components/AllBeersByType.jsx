@@ -30,7 +30,7 @@ function AllBeersByType({ title, cls, type }) {
               <img src={beer.image_url} alt={beer.id} />
               <div className="footerCard">
                 <Link to={`/Description/${beer.id}`}>
-                    <p>+ d'infos</p>
+                  <p>+ d'infos</p>
                 </Link>
                 <p>x12</p>
               </div>
