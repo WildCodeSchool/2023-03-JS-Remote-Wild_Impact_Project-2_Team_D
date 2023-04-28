@@ -1,3 +1,4 @@
+import React from "react";
 import "@components/BigCardBeer.css";
 
 function BigCardBeer({ beer }) {
@@ -31,4 +32,5 @@ function BigCardBeer({ beer }) {
     </div>
   );
 }
+
 export default BigCardBeer;
