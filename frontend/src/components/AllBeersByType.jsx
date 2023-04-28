@@ -55,9 +55,9 @@ function AllBeersByType({ title, cls, type }) {
                   </div>
                   <img src={beer.image_url} alt={beer.id} />
                   <div className="footerCard">
-                    <button type="button">
-                      <p>+ d'infos</p>
-                    </button>
+                    <Link to={`/Description/${beer.id}`}>
+                  <p>+ d'infos</p>
+                </Link>
                     <p>x12</p>
                   </div>
                   <div className="beerName">
@@ -83,9 +83,9 @@ function AllBeersByType({ title, cls, type }) {
                   </div>
                   <img src={beer.image_url} alt={beer.id} />
                   <div className="footerCard">
-                    <button type="button">
-                      <p>+ d'infos</p>
-                    </button>
+                     <Link to={`/Description/${beer.id}`}>
+                  <p>+ d'infos</p>
+                </Link>
                     <p>x12</p>
                   </div>
                   <div className="beerName">
@@ -111,9 +111,9 @@ function AllBeersByType({ title, cls, type }) {
                   </div>
                   <img src={beer.image_url} alt={beer.id} />
                   <div className="footerCard">
-                    <button type="button">
-                      <p>+ d'infos</p>
-                    </button>
+                     <Link to={`/Description/${beer.id}`}>
+                  <p>+ d'infos</p>
+                </Link>
                     <p>x12</p>
                   </div>
                   <div className="beerName">
