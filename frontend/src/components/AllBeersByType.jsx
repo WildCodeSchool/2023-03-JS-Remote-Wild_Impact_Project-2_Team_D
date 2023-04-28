@@ -1,10 +1,18 @@
-import React from "react";
 import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 import shop2 from "@assets/shop2.png";
 import "@components/AllBeersByType.css";
-import beers from "../assets/beersDataBase";
 
 function AllBeersByType({ title, cls, type }) {
+  const [beers, setBeers] = useState([]);
+
+  useEffect(() => {
+    fetch(`http://localhost:5500/beers?type=${type}`)
+      .then((res) => res.json())
+      .then((json) => setBeers(json))
+      .catch((err) => console.error(err));
+  }, []);
+
   return (
     <div className="containerBeer">
       <h2 className="titleHome">{title}</h2>
@@ -22,9 +30,7 @@ function AllBeersByType({ title, cls, type }) {
               <img src={beer.image_url} alt={beer.id} />
               <div className="footerCard">
                 <Link to={`/Description/${beer.id}`}>
-                  <button type="button">
                     <p>+ d'infos</p>
-                  </button>
                 </Link>
                 <p>x12</p>
               </div>
