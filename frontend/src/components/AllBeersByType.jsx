@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import shop2 from "@assets/shop2.png";
 import "@components/AllBeersByType.css";
 import beers from "../assets/beersDataBase";
@@ -11,7 +11,7 @@ import {
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 
-function AllBeersByType({ title, cls, type }) {
+function AllBeersByType({ title, cls }) {
   const colors = [
     "#ffb4b4",
     "#bbf0f4",
@@ -24,8 +24,17 @@ function AllBeersByType({ title, cls, type }) {
   const getRandom = () => {
     return Math.floor(Math.random() * colors.length);
   };
+  
+   const [beers, setBeers] = useState([]);
 
-  return (
+  useEffect(() => {
+    fetch(`http://localhost:5500/beers?type=${type}`)
+      .then((res) => res.json())
+      .then((json) => setBeers(json))
+      .catch((err) => console.error(err));
+  }, []);
+ 
+ return (
     <div className="containerBeer">
       <h2 className="titleHome">{title}</h2>
       <CarouselProvider

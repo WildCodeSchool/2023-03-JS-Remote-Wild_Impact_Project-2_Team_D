@@ -24,6 +24,7 @@ const getBeers = (req, res) => {
     url += " WHERE type = ?";
     value.push(req.query.type);
   }
+
   connexion
     .query(url, value)
     .then(([beers]) => {
