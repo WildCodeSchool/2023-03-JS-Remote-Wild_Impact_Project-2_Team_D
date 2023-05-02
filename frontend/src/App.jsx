@@ -1,25 +1,27 @@
-import Home from "./pages/Home";
-// US 1 import
-
-// US 2 Import
-
-// US 3 import
-
-// US 4 import
-
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "@picocss/pico";
+import Home from "@pages/Home";
+import Page2 from "@pages/Page2";
+import Header from "@components/Header";
+import CartPage from "@pages/Cart";
+import ContactForm from "@components/ContactForm";
+import Footer from "@components/Footer";
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-      {/** US 1 Page */}
-      {/** US 2 Page */}
-      {/** US 3 Page */}
-      {/** US 4 Page */}
-      <p>coucou</p>
-    </div>
+    <Router>
+      <div>
+        <Header />
+      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Description/:id" element={<Page2 />} />
+        <Route path="/Cart" element={<CartPage />} />
+      </Routes>
+      <ContactForm />
+      <Footer />
+    </Router>
   );
 }
 

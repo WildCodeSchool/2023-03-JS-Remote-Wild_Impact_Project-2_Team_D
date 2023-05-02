@@ -2,12 +2,56 @@ const express = require("express");
 
 const router = express.Router();
 
-const itemControllers = require("./controllers/itemControllers");
+const connexion = require("./connexion");
 
-router.get("/items", itemControllers.browse);
-router.get("/items/:id", itemControllers.read);
-router.put("/items/:id", itemControllers.edit);
-router.post("/items", itemControllers.add);
-router.delete("/items/:id", itemControllers.destroy);
+connexion
+  .getConnection()
+  .then((el) => {
+    console.info(
+      `Connexion to the DB with the id ${el.connection.connectionId}`
+    );
+  })
+  .catch((err) => console.error(err));
+
+const welcome = (req, res) => {
+  res.send("Hello");
+};
+
+const getBeers = (req, res) => {
+  let url = "SELECT * FROM beers";
+  const value = [];
+  if (req.query.type) {
+    url += " WHERE type = ?";
+    value.push(req.query.type);
+  }
+
+  connexion
+    .query(url, value)
+    .then(([beers]) => {
+      res.json(beers);
+    })
+    .catch((err) => {
+      console.error(err);
+      res.status(500).send("Error retrieving data from database");
+    });
+};
+
+const getBeersById = (req, res) => {
+  const { id } = req.params;
+
+  connexion
+    .query("SELECT * FROM beers WHERE id = ?", [id])
+    .then(([beers]) => {
+      res.json(beers[0]);
+    })
+    .catch((err) => {
+      console.error(err);
+      res.status(500).send("Error retrieving data from database");
+    });
+};
+
+router.get("/", welcome);
+router.get("/beers", getBeers);
+router.get("/beers/:id", getBeersById);
 
 module.exports = router;

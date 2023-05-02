@@ -1,0 +1,57 @@
+/* TITLE */
+
+.titleabout {
+  font-size: 3vw;
+  --typography-spacing-vertical: 0rem;
+  color: white;
+  background-color: #3a3a3a;
+  width: 15vw;
+  padding-left: 1vw;
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 2rem;
+}
+
+/* ABOUT */
+
+.about {
+  background: url("../../public/aboutBackground.jpg");
+  background-size: cover;
+  height: 70vw;
+}
+
+.history img {
+  margin-top: 3rem;
+  height: 30vw;
+}
+
+.history p {
+  font-size: 1.5vw;
+  color: white;
+  margin-left: 1rem;
+  padding-top: 1rem;
+}
+
+.history {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* TEAM */
+
+.team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team img {
+  height: 5rem;
+}
+
+.team h3 {
+  font-size: 2.5vw;
+  margin-bottom: 0.5rem;
+  color: white;
+}

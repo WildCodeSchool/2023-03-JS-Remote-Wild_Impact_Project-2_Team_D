@@ -1,0 +1,75 @@
+.contactForm {
+  background-image: url("public/backgroundForm.jpg");
+  background-size: cover;
+  font-family: var(--main-font);
+  letter-spacing: 1px;
+  padding: 1rem 1.5rem;
+  border: none;
+}
+
+.formContainer {
+  margin-top: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .contactForm {
+    padding: 5rem 13rem;
+  }
+}
+
+.contactForm h3,
+.contactForm textarea,
+.contactForm input {
+  color: var(--main-color-white);
+}
+
+.contactForm textarea,
+.contactForm input {
+  border-bottom: 2px solid var(--main-color-white) !important;
+  border-radius: 0px;
+  border: none;
+}
+
+.inputFieldEmail input {
+  margin-left: 0.5rem;
+}
+
+.contactForm h3 {
+  margin-bottom: 15px;
+  margin-top: 35px;
+  padding: 5px;
+}
+
+.userNameEmail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.userInfo {
+  display: flex;
+  position: relative;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--main-color-white);
+}
+
+.submitButton {
+  border: solid 2px var(--main-color-white);
+  background-color: var(--main-color-white);
+  color: #3a3a3a;
+  width: 6rem;
+}
+
+.submitButton:hover {
+  opacity: 70%;
+}
+
+.divSubmitButton {
+  display: flex;
+  justify-content: flex-end;
+}
