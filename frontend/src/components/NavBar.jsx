@@ -5,7 +5,6 @@ import "./NavBar.css";
 function NavBar() {
   const location = useLocation();
   const [activePage, setActivePage] = useState("home");
-  // TODO : mettre les liens dans un array et faire un map pour les afficher ;)
   useEffect(() => {
     if (location.pathname === "/") {
       setActivePage("home");
