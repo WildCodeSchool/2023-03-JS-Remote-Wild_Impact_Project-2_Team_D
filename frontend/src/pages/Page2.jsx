@@ -1,7 +1,6 @@
 import "@picocss/pico";
 
 import { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
 
 import BigCardBeer from "@components/BigCardBeer";
 import OtherChoice from "@components/OtherChoice";
@@ -17,15 +16,12 @@ function Page2() {
   useEffect(() => {
     fetch(`http://localhost:5500/beers/${randoms}`)
       .then((res) => res.json())
-      .then((json) => setBeer(json))
+      .then((json) => {
+        setBeer(json);
+        document.title = `Aromalt -${json.name}`;
+      })
       .catch((err) => console.error(err));
   }, [randoms]);
-
-  const location = useLocation();
-
-  useEffect(() => {
-    document.title = `Aromalt${location.pathname}`;
-  }, [location.pathname]);
 
   return (
     <div data-theme="light">

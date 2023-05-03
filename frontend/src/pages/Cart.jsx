@@ -3,16 +3,13 @@ import BeerBasketCard from "@components/BasketBeerItem";
 import beers from "@assets/beersDataBase";
 
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
 
 const totalTtcAround = "€€€";
 
 function CartPage() {
-  const location = useLocation();
-
   useEffect(() => {
-    document.title = `Aromalt${location.pathname}`;
-  }, [location.pathname]);
+    document.title = `Aromalt - Panier`;
+  }, []);
 
   return (
     <div className="CartPage">
