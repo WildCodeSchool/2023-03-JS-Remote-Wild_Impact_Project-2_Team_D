@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { ToastContainer, toast } from "react-toastify";
+// eslint-disable-next-line import/no-extraneous-dependencies
+import "react-toastify/dist/ReactToastify.css";
 import "./ContactForm.css";
 
 function ContactForm() {
@@ -6,9 +10,8 @@ function ContactForm() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const onSubmit = () => {
-    // eslint-disable-next-line no-alert
-    alert(`Votre message a bien été envoyé ${name} !`);
+  const notify = () => {
+    toast(`Merci ${name}, Aromalt te répondra prochainement !`);
   };
 
   return (
@@ -51,9 +54,21 @@ function ContactForm() {
             />
           </div>
           <div className="divSubmitButton">
-            <button type="button" className="submitButton" onClick={onSubmit}>
+            <button type="button" className="submitButton" onClick={notify}>
               Envoyer
             </button>
+            <ToastContainer
+              position="top-center"
+              autoClose={5430}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+              theme="dark"
+            />
           </div>
         </form>
       </div>
