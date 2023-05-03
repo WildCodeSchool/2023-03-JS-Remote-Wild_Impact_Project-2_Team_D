@@ -25,6 +25,11 @@ const getBeers = (req, res) => {
     value.push(req.query.type);
   }
 
+  if (req.query.name) {
+    url += " WHERE name LIKE ? LIMIT 5";
+    value.push(`${req.query.name}%`);
+  }
+
   connexion
     .query(url, value)
     .then(([beers]) => {
