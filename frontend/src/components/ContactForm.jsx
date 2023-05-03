@@ -11,7 +11,6 @@ function ContactForm() {
   const [message, setMessage] = useState("");
 
   const notify = () => {
-    // eslint-disable-next-line no-alert
     toast(`Merci ${name}, Aromalt te répondra prochainement !`);
   };
 
