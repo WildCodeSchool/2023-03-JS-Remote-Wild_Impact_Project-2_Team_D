@@ -3,9 +3,8 @@ import logo from "@assets/logo.png";
 import loupe from "@assets/loupe.png";
 import shop from "@assets/shop.png";
 import "@components/Header.css";
-import SearchBar from "./SearchBar";
 import NavBar from "@components/NavBar";
-
+import SearchBar from "./SearchBar";
 
 function Header() {
   return (
