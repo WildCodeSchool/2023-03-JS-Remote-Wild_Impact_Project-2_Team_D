@@ -35,6 +35,7 @@
 
 .inputFieldEmail input {
   margin-left: 0.5rem;
+  background-color: none;
 }
 
 .contactForm h3 {
