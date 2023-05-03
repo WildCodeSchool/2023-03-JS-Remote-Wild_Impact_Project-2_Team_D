@@ -40,7 +40,6 @@
 .oneBeer {
   width: 31%;
   height: 10rem;
-  background-color: #b2a4ff !important;
   text-align: center;
   padding: 0rem 0rem 4rem 0rem !important;
 }
@@ -52,7 +51,7 @@
 
 .bruneBeers {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: no-wrap;
   justify-content: space-between;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -106,3 +105,5 @@
   font-weight: bolder;
   color: #b2a4ff;
 }
+
+/* BACKGROUND COLOR */

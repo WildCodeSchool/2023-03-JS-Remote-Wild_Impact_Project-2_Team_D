@@ -5,6 +5,7 @@ import shop from "@assets/shop.png";
 import "@components/Header.css";
 import NavBar from "@components/NavBar";
 
+
 function Header() {
   return (
     <div className="header">
@@ -14,6 +15,7 @@ function Header() {
         <img className="loupe" src={loupe} alt="loupe" />
         <img className="shop" src={shop} alt="shop" />
       </div>
+      <NavBar />
     </div>
   );
 }
