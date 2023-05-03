@@ -21,15 +21,11 @@ function NavBar() {
   return (
     <div className="navElement">
       <div className="navItem">
-        <Link style={{ textDecoration: "none" }} to="/">
-          Home{" "}
-        </Link>
+        <Link to="/">Home </Link>
         <div className={`underline ${activePage === "home" ? "active" : ""}`} />
       </div>
       <div className="navItem">
-        <Link style={{ textDecoration: "none" }} to="/Description">
-          Description{" "}
-        </Link>
+        <Link to="/Description">Description </Link>
         <div
           className={`underline ${
             activePage === "description" ? "active" : ""
@@ -37,9 +33,7 @@ function NavBar() {
         />
       </div>
       <div className="navItem">
-        <Link style={{ textDecoration: "none" }} to="/Cart">
-          Panier
-        </Link>
+        <Link to="/Cart">Panier</Link>
         <div className={`underline ${activePage === "cart" ? "active" : ""}`} />
       </div>
     </div>
