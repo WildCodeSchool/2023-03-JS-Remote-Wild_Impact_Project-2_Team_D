@@ -3,7 +3,6 @@ import logo from "@assets/logo.png";
 import loupe from "@assets/loupe.png";
 import shop from "@assets/shop.png";
 import "@components/Header.css";
-import NavBar from "./NavBar";
 import SearchBar from "./SearchBar";
 import NavBar from "@components/NavBar";
 
