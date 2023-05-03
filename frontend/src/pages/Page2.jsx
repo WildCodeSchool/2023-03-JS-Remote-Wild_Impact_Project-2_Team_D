@@ -12,18 +12,21 @@ import "@pages/page2.css";
 
 function Page2() {
   const { id } = useParams();
-  const [randoms, setRandoms] = useState(id);
   const [beer, setBeer] = useState();
 
   useEffect(() => {
-    fetch(`http://localhost:5500/beers/${randoms}`)
+    fetch(`http://localhost:5500/beers/${id}`)
       .then((res) => res.json())
       .then((json) => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
         setBeer(json);
         document.title = `Aromalt -${json.name}`;
       })
       .catch((err) => console.error(err));
-  }, [randoms]);
+  }, [id]);
 
   return (
     <div data-theme="light">
@@ -32,7 +35,7 @@ function Page2() {
           <BigCardBeer beer={beer} />
           <Descriptions beer={beer} />
           <OtherChoice />
-          <Random setRandoms={setRandoms} />
+          <Random />
         </>
       )}
       ;

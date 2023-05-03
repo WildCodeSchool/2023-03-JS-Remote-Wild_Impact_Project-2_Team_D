@@ -1,12 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import "@components/Random.css";
 
-function Random({ setRandoms }) {
+function Random() {
+  const navigate = useNavigate();
   const handleClick = () => {
-    setRandoms(Math.floor(Math.random() * 50 + 1));
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    navigate(`/Description/${Math.floor(Math.random() * 50 + 1)}`);
   };
 
   return (
