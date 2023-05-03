@@ -14,7 +14,6 @@ function Header() {
         <img className="loupe" src={loupe} alt="loupe" />
         <img className="shop" src={shop} alt="shop" />
       </div>
-      <NavBar />
     </div>
   );
 }
