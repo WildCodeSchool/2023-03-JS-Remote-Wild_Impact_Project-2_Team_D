@@ -10,6 +10,15 @@
   --pastel-color-purple: #b2a4ff;
   --main-font: "Josefin Sans", sans-serif;
   --secondary-font: "Jost", sans-serif;
+  --toastify-color-progress-light: linear-gradient(
+    to right,
+    #fff6a6,
+    #ffdeb4,
+    #ffb4b4,
+    #bbf0f4,
+    #d4eadf,
+    #b2a4ff
+  );
 }
 
 h1 {
