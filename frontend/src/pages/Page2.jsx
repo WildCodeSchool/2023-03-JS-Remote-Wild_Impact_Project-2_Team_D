@@ -1,6 +1,7 @@
 import "@picocss/pico";
 
 import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 
 import BigCardBeer from "@components/BigCardBeer";
 import OtherChoice from "@components/OtherChoice";
@@ -10,7 +11,8 @@ import Random from "@components/Random";
 import "@pages/page2.css";
 
 function Page2() {
-  const [randoms, setRandoms] = useState(1);
+  const { id } = useParams();
+  const [randoms, setRandoms] = useState(id);
   const [beer, setBeer] = useState();
 
   useEffect(() => {
@@ -30,7 +32,7 @@ function Page2() {
           <BigCardBeer beer={beer} />
           <Descriptions beer={beer} />
           <OtherChoice />
-          <Random randoms={randoms} setRandoms={setRandoms} />
+          <Random setRandoms={setRandoms} />
         </>
       )}
       ;
