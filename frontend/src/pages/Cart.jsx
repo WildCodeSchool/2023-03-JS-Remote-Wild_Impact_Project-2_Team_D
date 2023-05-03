@@ -1,15 +1,37 @@
+import { useState, useEffect } from "react";
 import "./Cart.css";
 import BeerBasketCard from "@components/BasketBeerItem";
-import beers from "@assets/beersDataBase";
 
-const totalTtcAround = "€€€";
+function CartPage({ addToCart, removeFromCart, deleteFromCart, cart }) {
+  const [beers, setBeers] = useState([]);
 
-function CartPage() {
+  useEffect(() => {
+    const requests = cart.map((article) =>
+      fetch(`http://localhost:5000/beers/${article.id}`)
+        .then((res) => res.json())
+        .then((json) => ({ ...json, ...article }))
+        .catch((err) => console.error(err))
+    );
+    Promise.all(requests).then((data) =>
+      setBeers(data.sort((a, b) => a.createdAt - b.createdAt))
+    );
+  }, [cart]);
+
+  const totalTtcAround = beers
+    .reduce((acc, beer) => acc + beer.quantity * beer.price_per_liter * 0.33, 0)
+    .toFixed(2);
+
   return (
     <div className="CartPage">
       <h1 className="h1CartPage">Mon panier</h1>
-      {beers.slice(0, 8).map((beer) => (
-        <BeerBasketCard key={beer.id} beer={beer} />
+      {beers.map((beer) => (
+        <BeerBasketCard
+          key={beer.id}
+          beer={beer}
+          removeFromCart={removeFromCart}
+          addToCart={addToCart}
+          deleteFromCart={deleteFromCart}
+        />
       ))}
 
       <div className="continueButtonAndTTC">

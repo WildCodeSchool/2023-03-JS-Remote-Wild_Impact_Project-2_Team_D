@@ -5,11 +5,11 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 import shop2 from "@assets/shop2.png";
 import "@components/AllBeersByType.css";
 
-function AllBeersByType({ title, cls, type }) {
+function AllBeersByType({ title, cls, type, addToCart }) {
   const [beers, setBeers] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5500/beers?type=${type}`)
+    fetch(`http://localhost:5000/beers?type=${type}`)
       .then((res) => res.json())
       .then((json) => setBeers(json))
       .catch((err) => console.error(err));
@@ -47,7 +47,7 @@ function AllBeersByType({ title, cls, type }) {
                   // style={Math.random()}
                 >
                   <div className="headerCard">
-                    <button type="button">
+                    <button type="button" onClick={() => addToCart(beer.id, 1)}>
                       <img className="shop2" src={shop2} alt="shop" />
                     </button>
                   </div>
