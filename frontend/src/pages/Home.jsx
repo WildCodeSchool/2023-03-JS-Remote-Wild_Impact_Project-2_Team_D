@@ -4,7 +4,6 @@ import AllBeersByType from "@components/AllBeersByType";
 import About from "@components/About";
 
 export default function Home({ addToCart }) {
-
   useEffect(() => {
     document.title = `Aromalt`;
   }, []);
