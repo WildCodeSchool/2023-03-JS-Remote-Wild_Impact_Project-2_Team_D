@@ -1,6 +1,5 @@
 import React from "react";
 import logo from "@assets/logo.png";
-import shop from "@assets/shop.png";
 import "@components/Header.css";
 import NavBar from "@components/NavBar";
 import SearchBar from "./SearchBar";
