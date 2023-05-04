@@ -1,15 +1,11 @@
-import { useState } from "react";
-
 import "@pages/Cart.css";
 
 import bin from "@assets/bin.png";
 import plus from "@assets/plus.png";
 import moins from "@assets/moins.png";
 
-function BeerBasketCard({ beer }) {
+function BeerBasketCard({ beer, removeFromCart, addToCart, deleteFromCart }) {
   const priceByBottleAround = beer.price_per_liter * (0.33).toFixed(2);
-
-  const [addBeer, setAddBeer] = useState(1);
 
   return (
     <div className="basketItem">
@@ -22,7 +18,7 @@ function BeerBasketCard({ beer }) {
         <div className="beerDetailList">
           <div className="beerDetailItem">
             <p className="beerBasketName">{beer.name}</p>
-            <p className="beerBasketDetail">Quantité : {addBeer}</p>
+            <p className="beerBasketDetail">Quantité : {beer.quantity}</p>
             <p className="beerBasketDetail">Volume : 33 cl</p>
             <div>
               <p className="beerBasketDetail">
@@ -36,7 +32,7 @@ function BeerBasketCard({ beer }) {
               <button
                 className="basketIcon"
                 type="button"
-                onClick={() => setAddBeer((numberBeer) => numberBeer - 1)}
+                onClick={() => removeFromCart(beer.id, 1)}
               >
                 <img src={moins} alt="Less" />
               </button>
@@ -45,7 +41,7 @@ function BeerBasketCard({ beer }) {
               <button
                 className="basketIcon"
                 type="button"
-                onClick={() => setAddBeer((numberBeer) => numberBeer + 1)}
+                onClick={() => addToCart(beer.id, 1)}
               >
                 <img src={plus} alt="Add" />
               </button>
@@ -54,7 +50,7 @@ function BeerBasketCard({ beer }) {
               <button
                 className="basketIcon"
                 type="button"
-                onClick={() => setAddBeer(0)}
+                onClick={() => deleteFromCart(beer.id)}
               >
                 <img src={bin} alt="Bin" />
               </button>
@@ -63,7 +59,7 @@ function BeerBasketCard({ beer }) {
         </div>
         <div className="ttcByBeer">
           <p className="ttcByBeerDetail">
-            Total : {(addBeer * priceByBottleAround).toFixed(2)} €
+            Total : {(beer.quantity * priceByBottleAround).toFixed(2)} €
           </p>
         </div>
       </div>

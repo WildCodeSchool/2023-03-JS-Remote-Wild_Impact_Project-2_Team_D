@@ -5,6 +5,8 @@
   letter-spacing: 1px;
   padding: 1rem 1.5rem;
   border: none;
+  --form-element-active-border-color: none;
+  --form-element-focus-color: none;
 }
 
 .formContainer {
@@ -35,6 +37,7 @@
 
 .inputFieldEmail input {
   margin-left: 0.5rem;
+  background-color: none;
 }
 
 .contactForm h3 {
@@ -69,7 +72,8 @@ textarea::placeholder {
   opacity: 70%;
 }
 
-.divSubmitButton {
+.Toastify__close-button--light {
   display: flex;
   justify-content: flex-end;
+  width: 30%;
 }

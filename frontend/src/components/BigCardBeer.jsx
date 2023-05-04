@@ -1,7 +1,7 @@
 import React from "react";
 import "@components/BigCardBeer.css";
 
-function BigCardBeer({ beer }) {
+function BigCardBeer({ beer, addToCart }) {
   return (
     <div className="main">
       <div className="price">
@@ -23,7 +23,11 @@ function BigCardBeer({ beer }) {
       <nav className="panierMain">
         <ul>
           <li>
-            <button className="buttonMain" type="button">
+            <button
+              className="buttonMain"
+              type="button"
+              onClick={() => addToCart(beer.id, 1)}
+            >
               <strong>Ajouter au panier</strong> +
             </button>
           </li>

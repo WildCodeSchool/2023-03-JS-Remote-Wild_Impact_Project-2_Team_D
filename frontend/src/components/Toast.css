@@ -1,0 +1,11 @@
+.toast {
+  padding: 12px;
+  text-align: center;
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(182, 250, 213);
+  color: rgb(66, 142, 84);
+  font-weight: bold;
+}
