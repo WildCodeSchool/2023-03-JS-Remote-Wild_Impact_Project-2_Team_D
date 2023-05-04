@@ -59,7 +59,7 @@ function ContactForm() {
             </button>
             <ToastContainer
               position="top-center"
-              autoClose={5430}
+              autoClose={6000}
               hideProgressBar={false}
               newestOnTop={false}
               closeOnClick
@@ -67,7 +67,7 @@ function ContactForm() {
               pauseOnFocusLoss
               draggable
               pauseOnHover
-              theme="dark"
+              theme="light"
             />
           </div>
         </form>
