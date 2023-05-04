@@ -15,6 +15,7 @@ function CartPage({ addToCart, removeFromCart, deleteFromCart, cart }) {
     Promise.all(requests).then((data) =>
       setBeers(data.sort((a, b) => a.createdAt - b.createdAt))
     );
+    document.title = `Aromalt - Panier`;
   }, [cart]);
 
   const totalTtcAround = beers
