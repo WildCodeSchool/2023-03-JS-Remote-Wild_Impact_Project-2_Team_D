@@ -25,3 +25,9 @@ a:active {
 a {
   text-decoration: none;
 }
+
+@media only screen and (max-width: 600px) {
+  .navElement {
+    font-size: smaller;
+  }
+}
