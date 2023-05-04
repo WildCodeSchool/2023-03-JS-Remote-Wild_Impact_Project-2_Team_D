@@ -10,7 +10,7 @@ import Random from "@components/Random";
 
 import "@pages/page2.css";
 
-function Page2() {
+function Page2({ addToCart }) {
   const { id } = useParams();
   const [beer, setBeer] = useState();
 
@@ -32,7 +32,7 @@ function Page2() {
     <div data-theme="light">
       {beer && (
         <>
-          <BigCardBeer beer={beer} />
+          <BigCardBeer beer={beer} addToCart={addToCart} />
           <Descriptions beer={beer} />
           <OtherChoice />
           <Random />
