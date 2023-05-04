@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./Cart.css";
 import BeerBasketCard from "@components/BasketBeerItem";
 
@@ -36,9 +37,11 @@ function CartPage({ addToCart, removeFromCart, deleteFromCart, cart }) {
       ))}
 
       <div className="continueButtonAndTTC">
-        <button type="button" className="continuePurchases">
-          CONTINUER VOS ACHATS
-        </button>
+        <Link to="/">
+          <button type="button" className="continuePurchases">
+            CONTINUER VOS ACHATS
+          </button>
+        </Link>
         <div className="priceTotalBeers">Total : {totalTtcAround} €</div>
       </div>
       <div className="command">
