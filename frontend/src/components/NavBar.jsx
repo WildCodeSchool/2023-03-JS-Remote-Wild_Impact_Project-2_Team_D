@@ -24,14 +24,6 @@ function NavBar() {
         <div className={`underline ${activePage === "home" ? "active" : ""}`} />
       </div>
       <div className="navItem">
-        <Link to="/Description">Description </Link>
-        <div
-          className={`underline ${
-            activePage === "description" ? "active" : ""
-          }`}
-        />
-      </div>
-      <div className="navItem">
         <Link to="/Cart">Panier</Link>
         <div className={`underline ${activePage === "cart" ? "active" : ""}`} />
       </div>

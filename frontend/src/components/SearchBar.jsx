@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "@components/SearchBar.css";
 
 function searchBar() {
@@ -16,22 +17,23 @@ function searchBar() {
   }, [search]);
 
   return (
-    <div className="searchBarContainer">
-      <div className="searchBar">
-        <input
-          type="text"
-          value={search}
-          name="searchBar"
-          id="searchBar"
-          placeholder="Rechercher"
-          onChange={(e) => setSearch(e.target.value)}
-        />
-      </div>
+    <div className="searchBar">
+      <input
+        type="text"
+        value={search}
+        name="searchBar"
+        id="searchBar"
+        placeholder="Rechercher"
+        onChange={(e) => setSearch(e.target.value)}
+      />
+
       <ul className="results">
         {beers.map((beer) => (
-          <li className="result" key={beer.id}>
-            <h4>{beer.name}</h4>
-          </li>
+          <Link to={`/Description/${beer.id}`}>
+            <li className="result" key={beer.id}>
+              <h4>{beer.name}</h4>
+            </li>
+          </Link>
         ))}
       </ul>
     </div>
