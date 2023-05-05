@@ -6,7 +6,7 @@ function searchBar() {
   const [search, setSearch] = useState("");
   useEffect(() => {
     if (search !== "") {
-      fetch(`http://localhost:5500/beers?name=${search}`)
+      fetch(`${import.meta.env.VITE_BACKEND_URL}/beers?name=${search}`)
         .then((response) => response.json())
         .then((json) => setBeers(json))
         .catch((err) => console.error(err));

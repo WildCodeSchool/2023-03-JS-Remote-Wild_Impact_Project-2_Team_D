@@ -15,7 +15,7 @@ function Page2({ addToCart }) {
   const [beer, setBeer] = useState();
 
   useEffect(() => {
-    fetch(`http://localhost:5500/beers/${id}`)
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/beers/${id}`)
       .then((res) => res.json())
       .then((json) => {
         window.scrollTo({
