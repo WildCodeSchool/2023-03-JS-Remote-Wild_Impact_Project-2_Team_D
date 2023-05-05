@@ -8,7 +8,7 @@ function CartPage({ addToCart, removeFromCart, deleteFromCart, cart }) {
 
   useEffect(() => {
     const requests = cart.map((article) =>
-      fetch(`http://localhost:5000/beers/${article.id}`)
+      fetch(`${import.meta.env.VITE_API_URL}/${article.id}`)
         .then((res) => res.json())
         .then((json) => ({ ...json, ...article }))
         .catch((err) => console.error(err))
@@ -37,10 +37,8 @@ function CartPage({ addToCart, removeFromCart, deleteFromCart, cart }) {
       ))}
 
       <div className="continueButtonAndTTC">
-        <Link to="/">
-          <button type="button" className="continuePurchases">
-            CONTINUER VOS ACHATS
-          </button>
+        <Link to="/" className="continuePurchases">
+          CONTINUER VOS ACHATS
         </Link>
         <div className="priceTotalBeers">Total : {totalTtcAround} €</div>
       </div>
