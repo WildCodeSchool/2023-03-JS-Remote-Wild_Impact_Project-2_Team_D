@@ -44,7 +44,6 @@ function AllBeersByType({ title, cls, type, addToCart }) {
                   className="oneBeer"
                   style={{ backgroundColor: colors[getRandom()] }}
                   key={beer.id}
-                // style={Math.random()}
                 >
                   <div className="headerCard">
                     <button type="button" onClick={() => addToCart(beer.id, 1)}>
