@@ -60,7 +60,7 @@
 @media screen and (min-width: 650px) {
   .team h3,
   .team {
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
 
   .team h3 {
@@ -75,5 +75,23 @@
 @media screen and (min-width: 650px) {
   .team img {
     height: 10rem !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .team img {
+    height: 10rem !important;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .team img {
+    height: 5rem !important;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .team img {
+    height: 12rem !important;
   }
 }
