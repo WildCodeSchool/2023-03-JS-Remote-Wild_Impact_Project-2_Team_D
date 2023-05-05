@@ -59,7 +59,7 @@ function AllBeersByType({ title, cls, type, addToCart }) {
                   </div>
                   <div className="beerName">
                     <h3>{beer.name}</h3>
-                    <h3>10e</h3>
+                    <h3>{(beer.price_per_liter * 0.33).toFixed(2)} €</h3>
                   </div>
                 </article>
               ))}
@@ -87,7 +87,7 @@ function AllBeersByType({ title, cls, type, addToCart }) {
                   </div>
                   <div className="beerName">
                     <h3>{beer.name}</h3>
-                    <h3>10e</h3>
+                    <h3>{(beer.price_per_liter * 0.33).toFixed(2)} €</h3>
                   </div>
                 </article>
               ))}
@@ -115,7 +115,7 @@ function AllBeersByType({ title, cls, type, addToCart }) {
                   </div>
                   <div className="beerName">
                     <h3>{beer.name}</h3>
-                    <h3>10e</h3>
+                    <h3>{(beer.price_per_liter * 0.33).toFixed(2)} €</h3>
                   </div>
                 </article>
               ))}
