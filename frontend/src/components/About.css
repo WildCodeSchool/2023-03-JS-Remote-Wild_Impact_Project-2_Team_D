@@ -55,3 +55,18 @@
   margin-bottom: 0.5rem;
   color: white;
 }
+
+@media screen and (min-width: 650px) {
+  .team h3,
+  .team {
+    margin-top: 2rem;
+  }
+
+  .team h3 {
+    margin-right: 4rem;
+  }
+
+  .history {
+    margin-top: 0.5rem;
+  }
+}
