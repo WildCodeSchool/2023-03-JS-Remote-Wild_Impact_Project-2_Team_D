@@ -8,7 +8,7 @@ function CartPage({ addToCart, removeFromCart, deleteFromCart, cart }) {
 
   useEffect(() => {
     const requests = cart.map((article) =>
-      fetch(`${import.meta.env.VITE_API_URL}/${article.id}`)
+      fetch(`http://localhost:5000/beers/${article.id}`)
         .then((res) => res.json())
         .then((json) => ({ ...json, ...article }))
         .catch((err) => console.error(err))
