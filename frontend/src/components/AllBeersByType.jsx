@@ -9,7 +9,7 @@ function AllBeersByType({ title, cls, type, addToCart }) {
   const [beers, setBeers] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/beers?type=${type}`)
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/beers?type=${type}`)
       .then((res) => res.json())
       .then((json) => setBeers(json))
       .catch((err) => console.error(err));
@@ -44,7 +44,6 @@ function AllBeersByType({ title, cls, type, addToCart }) {
                   className="oneBeer"
                   style={{ backgroundColor: colors[getRandom()] }}
                   key={beer.id}
-                  // style={Math.random()}
                 >
                   <div className="headerCard">
                     <button type="button" onClick={() => addToCart(beer.id, 1)}>
