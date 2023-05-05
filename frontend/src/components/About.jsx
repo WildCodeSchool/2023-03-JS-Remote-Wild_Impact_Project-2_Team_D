@@ -13,17 +13,15 @@ function About() {
       <div className="history">
         <img className="about" src={about} alt="about" />
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-          condimentum dignissim ante quis ornare. Duis vestibulum tincidunt
-          nisl, sed ultrices ligula bibendum a. Donec id massa vitae risus
-          tincidunt lacinia ut laoreet nibh. Etiam tincidunt egestas purus,
-          vitae eleifend erat lacinia dictum. Pellentesque habitant morbi
-          tristique senectus et netus et malesuada fames ac turpis egestas.
-          Vestibulum venenatis tincidunt iaculis. Cras at turpis nec est varius
-          aliquet ac quis erat. Duis faucibus, leo at efficitur tempus, est
-          libero finibus velit, in fringilla ipsum ipsum ut ligula. Donec
-          laoreet, justo sed tristique dapibus, mi eros ultricies dolor, non
-          lobortis lacus elit quis diam.
+          Nous sommes ravis de vous présenter Aromalt, notre site de vente en
+          ligne de bières fondé par quatre étudiants en développement web
+          passionnés par les bières de qualité. Aromalt a pour mission de
+          proposer une sélection de bières uniques et savoureuses. Nous
+          proposons une variété soigneusement sélectionnées pour leur goût
+          exceptionnel et leur qualité. Nous sommes persuadés que vous trouverez
+          sur Aromalt des bières qui vous plairont, et nous serions honorés de
+          vous compter parmi nos clients fidèles. N'hésitez pas à nous contacter
+          si vous avez des questions ou des commentaires !
         </p>
       </div>
       <div className="team">
