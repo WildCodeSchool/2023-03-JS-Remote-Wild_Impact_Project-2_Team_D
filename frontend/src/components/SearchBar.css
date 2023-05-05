@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-top: 2.5rem;
+  margin-top: 2.5rem;
   z-index: 9999;
   position: absolute;
   top: 1rem;
