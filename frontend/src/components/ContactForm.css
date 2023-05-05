@@ -1,5 +1,5 @@
 .contactForm {
-  background-image: url("public/backgroundForm.jpg");
+  background-image: url("../../public/backgroundForm.jpg");
   background-size: cover;
   font-family: var(--main-font);
   letter-spacing: 1px;
@@ -65,7 +65,6 @@ textarea::placeholder {
   border: solid 2px var(--main-color-white);
   background-color: var(--main-color-white);
   color: #3a3a3a;
-  width: 6rem;
 }
 
 .submitButton:hover {

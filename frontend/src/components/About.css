@@ -44,10 +44,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 0.6rem;
 }
 
 .team img {
-  height: 5rem;
+  height: 3rem;
 }
 
 .team h3 {
@@ -59,7 +60,7 @@
 @media screen and (min-width: 650px) {
   .team h3,
   .team {
-    margin-top: 2rem;
+    margin-top: 4rem;
   }
 
   .team h3 {
@@ -68,5 +69,11 @@
 
   .history {
     margin-top: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .team img {
+    height: 10rem !important;
   }
 }
