@@ -1,6 +1,9 @@
 import React from "react";
 import about from "@assets/about.jpg";
-import team from "@assets/team.png";
+import adrien from "@assets/adrien.png";
+import benoit from "@assets/benoit.png";
+import nico from "@assets/nico.png";
+import flo from "@assets/flo.png";
 import "@components/About.css";
 
 function About() {
@@ -25,10 +28,10 @@ function About() {
       </div>
       <div className="team">
         <h3>Notre équipe</h3>
-        <img className="team" src={team} alt="team" />
-        <img className="team" src={team} alt="team" />
-        <img className="team" src={team} alt="team" />
-        <img className="team" src={team} alt="team" />
+        <img className="team" src={flo} alt="team" />
+        <img className="team" src={benoit} alt="team" />
+        <img className="team" src={adrien} alt="team" />
+        <img className="team" src={nico} alt="team" />
       </div>
     </div>
   );
