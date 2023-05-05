@@ -1,0 +1,38 @@
+.searchBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 2.5rem;
+  z-index: 9999;
+  position: absolute;
+  top: 1rem;
+  right: 0rem;
+}
+
+.searchBar input {
+  font-size: 0.8rem;
+  height: 0.8rem;
+  width: 6.5rem;
+  border-radius: 1rem;
+  border: 0px;
+  background-color: white;
+  color: #3a3a3a;
+}
+
+.results h4 {
+  font-size: 1rem;
+  margin-bottom: 0;
+  color: white;
+}
+
+.results {
+  background-color: #3a3a3a;
+  text-decoration: none;
+  width: 130px;
+  position: relative;
+}
+
+.searchBar ::placeholder {
+  color: #3a3a3a !important;
+}

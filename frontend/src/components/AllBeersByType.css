@@ -27,7 +27,6 @@
 
 .titleHome {
   font-weight: 400;
-  font-size: 4vw;
   text-align: center;
   padding-top: 2rem;
   color: #3a3a3a;
@@ -46,6 +45,7 @@
 
 .containerBeer {
   width: 100%;
+  height: 20rem;
   background-color: #fff2e5 !important;
 }
 
@@ -58,7 +58,7 @@
 }
 
 .bruneBeers p {
-  font-size: 1rem;
+  font-size: 0.7rem;
   color: white;
   --typography-spacing-vertical: 1rem;
 }
@@ -107,3 +107,10 @@
 }
 
 /* BACKGROUND COLOR */
+.carousel {
+  height: 20rem;
+}
+
+.horizontalSlider___281Ls {
+  height: 15rem;
+}

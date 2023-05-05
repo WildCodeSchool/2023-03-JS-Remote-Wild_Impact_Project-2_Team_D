@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   font: "Jost", sans-serif;
-  padding-top: 1rem;
+  padding-top: 3rem;
 }
 .price {
   color: #3a3a3a;
@@ -35,7 +35,7 @@
 }
 .imageBeer {
   padding-top: 1rem;
-  height: 60vw;
+  height: 50vw;
   width: 100%;
 }
 .nbrBeer {
@@ -82,7 +82,7 @@
   background: #b2a4ff;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 500px) {
   .card {
     height: 45rem;
   }
@@ -92,5 +92,11 @@
   .buttonMain {
     min-width: 20rem;
     height: 5rem;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .imageMain {
+    height: 30rem;
   }
 }
